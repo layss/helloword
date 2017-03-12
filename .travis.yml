@@ -1,0 +1,12 @@
+languagem: ruby
+
+sudo: required
+
+install:
+  - gem install rails
+  - gem install bundle 
+
+  script:
+    - bundle install
+    - rake db:migrate
+    - rails test
